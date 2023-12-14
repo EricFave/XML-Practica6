@@ -1,0 +1,45 @@
+<!ELEMENT xstock (estoc, clients)>
+<!ELEMENT estoc (videojocs, videoconsoles, pc)>
+<!ELEMENT videojocs (joc*)>
+<!ELEMENT joc (titol, desenvolupador+, tipus_consola, any, preu)>
+<!ELEMENT titol (#PCDATA)>
+<!ELEMENT desenvolupador (#PCDATA)>
+<!ELEMENT tipus_consola (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT preu (#PCDATA)>
+<!ELEMENT videoconsoles (consola*)>
+<!ELEMENT consola (nom, desenvolupador, preu)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT pc (portatils, sobretaula)>
+<!ELEMENT portatils (portatil*)>
+<!ELEMENT portatil (nom, marca, preu, processador, ram)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT processador (#PCDATA)>
+<!ELEMENT ram (#PCDATA)>
+<!ELEMENT sobretaula (pc_sobretaula*)>
+<!ELEMENT pc_sobretaula (nom, processador, ram, preu, placa_base?)>
+<!ELEMENT placa_base (#PCDATA)>
+<!ELEMENT clients (majors_edat, menors_edat, compra*)>
+<!ELEMENT majors_edat (client*)>
+<!ELEMENT client (nom, edat, ciutat_residencia, tutor_legal?)>
+<!ELEMENT edat (#PCDATA)>
+<!ELEMENT ciutat_residencia (#PCDATA)>
+<!ELEMENT menors_edat (client*)>
+<!ELEMENT tutor_legal (#PCDATA)>
+<!ELEMENT compra (dni, producte*)>
+<!ELEMENT dni (EMPTY)>
+<!ELEMENT producte (EMPTY)>
+<!ATTLIST joc category ("horror"| "mitologia" | "accio" )>
+<!ATTLIST joc id ID #REQUIRED>
+<!ATTLIST titol lang CDATA>
+<!ATTLIST consola category ("Sony" | "Microsoft" | "Nintendo")>
+<!ATTLIST consola id ID #REQUIRED>
+<!ATTLIST portatil category ("gaming" | "oficina" | "estudis")>
+<!ATTLIST portatil id ID #REQUIRED>
+<!ATTLIST pc_sobretaula category ("normal" | "costos" | "economic")>
+<!ATTLIST pc_sobretaula id ID #REQUIRED>
+<!ATTLIST majors_edat category ("majors")>
+<!ATTLIST menors_edat category ("menors")>
+<!ATTLIST client dni ID #REQUIRED>
+<!ATTLIST dni id_dni IDREF #REQUIRED>
+<!ATTLIST producte id_prod IDREF #REQUIRED>

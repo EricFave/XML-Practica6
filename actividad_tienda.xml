@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xstock SYSTEM "activitat_tienda.dtd">
+<!--Ara hi escribim l'etiqueta que engloba tota la nostra tenda-->
+<xstock>
+<!--Aquesta següent etiqueta engloba tot l'estoc que hi tenim a la tenda-->
+    <estoc>
+    <!--Afegim una etiqueta que englobaria tots els videoocs-->
+        <videojocs>
+        <!--Ara per a cada videojoc afegim una etiqueta nova anomeda joc, on dins, escribim diferents etiquetes amb caracteristiques de cada joc-->
+            <joc category = "horror" id="001">
+                <titol lang="en"> Resident Evil Village </titol>
+                <desenvolupador>CAPCOM</desenvolupador>
+                <tipus_consola>PS4/PS5 , XBOX SERIES S/X , PC, Nintendo SWITCH</tipus_consola>
+                <any>2020</any>
+                <preu>25 euros</preu>
+            </joc>
+            <joc category = "mitologia" id= "002">
+                <titol lang="en"> God Of War Ragnarok </titol>
+                <desenvolupador>Santa Monica Studio</desenvolupador>
+                <tipus_consola>PS4/PS5 , XBOX SERIES S/X , PC, Nintendo SWITCH</tipus_consola>
+                <any>2022</any>
+                <preu>40 euros</preu>
+            </joc>
+            <joc category = "accio" id="003">
+                <titol lang="en"> Assasin's creed Mirage </titol>
+                <desenvolupador>Ubisoft</desenvolupador>
+                <tipus_consola>PS4/PS5 , XBOX SERIES S/X , PC, Nintendo SWITCH</tipus_consola>
+                <any>2023</any>
+                <preu>40 euros</preu>
+            </joc>
+        </videojocs>
+
+        <videoconsoles>
+            <consola category = "Sony" id= "010">
+                <nom>PS5</nom>
+                <desenvolupador>Sony</desenvolupador>
+                <preu>500 euros</preu>
+            </consola>
+            <consola category = "Microsoft" id= "011">
+                <nom>XBOX SERIES X</nom>
+                <desenvolupador>Microsoft</desenvolupador>
+                <preu>440 euros</preu>
+            </consola>
+            <consola category = "Nintendo" id="012">
+                <nom>Nintendo Switch</nom>
+                <desenvolupador>Nintendo</desenvolupador>
+                <preu>300 euros</preu>
+            </consola>
+        </videoconsoles>
+    <!--Aqui introduim una etiqueta que s'encarregui de englobar tots els pc que hi tenim-->
+        <pc>
+        <!--Dins de la etiqeta pc i introduim una etiqueta que englobi tots els portatils-->
+            <portatils>
+            <!--Per a cada portatil hi creem una etiqueta propia amb diferents etiquetes que relacionen distintes caracteristiques-->
+                <portatil category = "gaming" id= "021">
+                    <nom>MSI Katana 15 B12V</nom>
+                    <marca>MSI</marca>
+                    <preu>929 euros</preu>
+                    <processador>Alder Lake i7-12650H</processador>
+                    <ram>DDR5 8GB*2</ram>
+                </portatil>
+                <portatil category = "oficina" id="022">
+                    <nom>Lenovo Yoga Slim 7 Pro 14IAP7</nom>
+                    <marca>Lenovo</marca>
+                    <preu>799 euros</preu>
+                    <processador>Intel® Core™ de 12ª generació</processador>
+                    <ram>8 GB</ram>
+                </portatil>
+                <portatil category = "estudis" id= "023">
+                    <nom>Lenovo IP Slim 3 Chrome 14M868</nom>
+                    <marca>Lenovo</marca>
+                    <preu>349 euros</preu>
+                    <processador>MediaTek Kompanio 520</processador>
+                    <ram>8GB</ram>
+                </portatil>
+            </portatils>
+        <!--Dins de la etiqeta pc i introduim una etiqueta que englobi tots els pcs de sobretaula-->
+            <sobretaula>
+            <!--Per a cada pc de sobretaula hi creem una etiqueta propia amb diferents etiquetes que relacionen distintes caracteristiques-->
+                <pc_sobretaula category = "normal" id= "031">
+                    <nom>Epical-Q Mercury</nom>
+                    <processador>AMD Ryzen 7 5700X</processador>
+                    <ram> 32GB DDR4 3200MHz</ram>
+                    <preu>1069 euros</preu>
+                    <placa_base>Asus B550M-A</placa_base>
+                </pc_sobretaula>
+                <pc_sobretaula category = "costos" id="032">
+                    <nom>PcCom Ultimate</nom>
+                    <processador>AMD Ryzen 7 7800X3D 4.2 GHz/5 GHz</processador>
+                    <ram>32GB 2x16GB</ram>
+                    <preu>2679 euros</preu>
+                    <placa_base>ASUS TUF GAMING X670E-PLUS WIFI</placa_base>
+                </pc_sobretaula>
+                <pc_sobretaula category = "economic" id="033">
+                    <nom>PcCom Lite </nom>
+                    <processador>AMD Ryzen 5 5500 3.6GHz </processador>
+                    <ram>DR4 3200 MHz 16GB</ram>
+                    <preu> 669 euros</preu>
+                    <placa_base>B550M</placa_base>
+                </pc_sobretaula>           
+            </sobretaula>
+        </pc>
+    </estoc>
+<!--Aquesta següent etiqueta engloba tots els clients que visiten la nostra tenda-->
+    <clients>
+    <!--En aquesta primera etiqueta diferenciem els clients majors d'edat-->
+        <majors_edat category="majors">
+        <!--Per a cada client, i creem una etiqueta i dins d'aquesta etiquete unes altres que relacionen les seves dades personals-->
+            <client dni= "A12345678">
+                <nom>Javi López</nom>
+                <edat>23</edat>
+                <ciutat_residencia>Sevilla</ciutat_residencia>
+            </client>
+            <client dni= "B12345678">
+                <nom>Marta Rodriguez</nom>
+                <edat>19</edat>
+                <ciutat_residencia>Barcelona</ciutat_residencia>
+            </client>
+            <client dni= "C12345678">
+                <nom>Marc Pereira</nom>
+                <edat>27</edat>
+                <ciutat_residencia>Barcelona</ciutat_residencia>
+            </client>
+        </majors_edat>
+    <!--En aquesta primera etiqueta diferenciem els clients menors d'edat-->
+        <menors_edat category="menors">
+        <!--Per a cada pc de sobretaula hi creem una etiqueta propia amb diferents etiquetes que relacionen distintes caracteristiques-->
+            <client dni= "D12345678">
+                <nom>Victor Fernandez</nom>
+                <edat>14</edat>
+                <ciutat_residencia>Barcelona</ciutat_residencia>
+                <tutor_legal>Oscar Fernandez</tutor_legal>
+            </client>
+            <client dni= "E12345678">
+                <nom>Irene Hernandez</nom>
+                <edat>17</edat>
+                <ciutat_residencia>Madrid</ciutat_residencia>
+                <tutor_legal>Juan Hernandez</tutor_legal>
+            </client>
+            <client dni= "F12345678">
+                <nom>Iván Jimenez</nom>
+                <edat>12</edat>
+                <ciutat_residencia>Valencia</ciutat_residencia>
+                <tutor_legal>Claudia Serrano</tutor_legal>
+            </client>
+        </menors_edat>
+        <compra>
+            <dni id_dni= "F12345678"/>
+            <producte id_prod= "001"/>
+        </compra>
+    </clients>
+</xstock>
