@@ -8,7 +8,7 @@
 <!ELEMENT any (#PCDATA)>
 <!ELEMENT preu (#PCDATA)>
 <!ELEMENT videoconsoles (consola*)>
-<!ELEMENT consola (nom, desenvolupador, preu)>
+<!ELEMENT consola (nom, desenvolupador+, preu)>
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT pc (portatils, sobretaula)>
 <!ELEMENT portatils (portatil*)>
